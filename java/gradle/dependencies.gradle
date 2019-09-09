@@ -114,6 +114,7 @@ libs += [
     scalatest            : "org.scalatest:scalatest_$versions.scalaBase:$versions.scalatest",
     scopt                : "com.github.scopt:scopt_$versions.scalaBase:$versions.scopt",
     slf4jApi             : "org.slf4j:slf4j-api:$versions.slf4j",
+    slf4jsimple          : "org.slf4j:slf4j-simple:$versions.slf4j",
     sparkAvro            : "org.apache.spark:spark-avro_$versions.scalaBase:$versions.spark",
     sparkCore            : "org.apache.spark:spark-core_$versions.scalaBase:$versions.spark",
     sparkSql             : "org.apache.spark:spark-sql_$versions.scalaBase:$versions.spark",

@@ -14,21 +14,14 @@
 // KIND, either express or implied.  See the License for the
 // specific language governing permissions and limitations
 // under the License.
+syntax = "proto2";
+package kudu.java;
 
-// This file contains the configuration of the project hierarchy.
-// Mainly we just define what subprojects are in the build.
+option java_package = "org.apache.kudu.java";
 
-rootProject.name = "kudu-parent"
-include "kudu-backup"
-include "kudu-backup-common"
-include "kudu-backup-tools"
-include "kudu-client"
-include "kudu-client-tools"
-include "kudu-flume-sink"
-include "kudu-hive"
-include "kudu-jepsen"
-include "kudu-mapreduce"
-include "kudu-ranger"
-include "kudu-spark"
-include "kudu-spark-tools"
-include "kudu-test-utils"
+message EchoRequestPB {
+  required string data = 1;
+}
+message EchoResponsePB {
+  required string data = 1;
+}
